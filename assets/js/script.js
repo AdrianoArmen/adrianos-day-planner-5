@@ -26,7 +26,35 @@ function init() {
     }
 }
 
-var tasks = [];
+var tasks = [{ 
+    id: "#hour-9",
+    text: "",
+  }  , { 
+    id: "#hour-10",
+    text: "",
+  }, { 
+    id: "#hour-11",
+    text: "",
+  }, { 
+    id: "#hour-12",
+    text: "",
+  }, { 
+    id: "#hour-13",
+    text: "",
+  }, { 
+    id: "#hour-14",
+    text: "",
+  }, { 
+    id: "#hour-15",
+    text: "",
+  }, { 
+    id: "#hour-16",
+    text: "",
+  }, { 
+    id: "#hour-17",
+    text: "",
+  }]; 
+  
 
 function displayTasks() {
     for (var i = 0; i < tasks.length; i++) {
