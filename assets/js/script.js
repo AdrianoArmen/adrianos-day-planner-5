@@ -45,3 +45,17 @@ function storageInit() {
         displayTasks();
     }
 }
+
+
+$(".saveBtn").click(function (event) {
+    $.trim($("#comment").val());
+
+    for (var i = 0; i < tasks.length; i++) {
+        taskText = $(tasks[i].id).children(".description").val();
+        console.log(taskText);
+
+        tasks[i].text=taskText;
+    }
+    localStorage.setItem("task", JSON.stringify(tasks));
+  displayTasks();
+});
