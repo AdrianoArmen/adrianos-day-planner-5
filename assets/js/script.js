@@ -119,3 +119,6 @@ $("#16btn").click(function (event) {
 $("#17btn").click(function (event) {
   storeTask(8);
 });
+
+// current date display using momentjs
+$('#currentDay').text(moment().format('dddd, MMMM Do'));
