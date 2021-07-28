@@ -89,30 +89,30 @@ function storeTask(i){
   displayTasks();
 }
 
-$("#9").click(function (event) {
+$("#9btn").click(function (event) {
   storeTask(0);
 });
-$("#10").click(function (event) {
+$("#10btn").click(function (event) {
   storeTask(1);
 });
-$("#11").click(function (event) {
+$("#11btn").click(function (event) {
   storeTask(2);
 });
-$("#12").click(function (event) {
+$("#12btn").click(function (event) {
   storeTask(3);
 });
-$("#13").click(function (event) {
+$("#13btn").click(function (event) {
   storeTask(4);
 });
-$("#14").click(function (event) {
+$("#14btn").click(function (event) {
   storeTask(5);
 });
-$("#15").click(function (event) {
+$("#15btn").click(function (event) {
   storeTask(6);
 });
-$("#16").click(function (event) {
+$("#16btn").click(function (event) {
   storeTask(7);
 });
-$("#17").click(function (event) {
+$("#17btn").click(function (event) {
   storeTask(8);
 });
