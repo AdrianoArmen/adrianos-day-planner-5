@@ -8,9 +8,9 @@ function init() {
     var timeNow;
     var id;
     for (i = 9; i <= 17; i++) {
-        timeNow = moment().format('h');
+        timeNow = moment().format('HH');
         id = "#hour-" + i;
-        console.log(id)
+        
         if (timeNow > i) {
             $(id).addClass("past");
         }
@@ -66,7 +66,7 @@ function displayTasks() {
 
 function storageInit() {
     var savedTasks = JSON.parse(localStorage.getItem("tasks"));
-    console.log(savedTasks);
+    
 
     if (savedTasks !== null) {
         tasks = savedTasks;
@@ -75,15 +75,12 @@ function storageInit() {
 }
 
 
-$(".saveBtn").click(function (event) {
-    $.trim($("#comment").val());
+function storeTask(i){
+  var taskContent=$(tasks[i].id).children(".description").val();
 
-    for (var i = 0; i < tasks.length; i++) {
-        taskText = $(tasks[i].id).children(".description").val();
-        console.log(taskText);
-
-        tasks[i].text=taskText;
-    }
-    localStorage.setItem("task", JSON.stringify(tasks));
+  tasks[i].text=taskContent;
+  console.log(taskContent);
+  
+  localStorage.setItem("tasks", JSON.stringify(tasks));
   displayTasks();
-});
+}
