@@ -1,5 +1,36 @@
 
 
+// Array of tasks per hour period
+
+var tasks = [{ 
+  id: "#hour-9",
+  text: "",
+}  , { 
+  id: "#hour-10",
+  text: "",
+}, { 
+  id: "#hour-11",
+  text: "",
+}, { 
+  id: "#hour-12",
+  text: "",
+}, { 
+  id: "#hour-13",
+  text: "",
+}, { 
+  id: "#hour-14",
+  text: "",
+}, { 
+  id: "#hour-15",
+  text: "",
+}, { 
+  id: "#hour-16",
+  text: "",
+}, { 
+  id: "#hour-17",
+  text: "",
+}]; 
+
 storageInit();
 init();
 
@@ -26,34 +57,7 @@ function init() {
     }
 }
 
-var tasks = [{ 
-    id: "#hour-9",
-    text: "",
-  }  , { 
-    id: "#hour-10",
-    text: "",
-  }, { 
-    id: "#hour-11",
-    text: "",
-  }, { 
-    id: "#hour-12",
-    text: "",
-  }, { 
-    id: "#hour-13",
-    text: "",
-  }, { 
-    id: "#hour-14",
-    text: "",
-  }, { 
-    id: "#hour-15",
-    text: "",
-  }, { 
-    id: "#hour-16",
-    text: "",
-  }, { 
-    id: "#hour-17",
-    text: "",
-  }]; 
+
   
 
 function displayTasks() {
@@ -80,7 +84,35 @@ function storeTask(i){
 
   tasks[i].text=taskContent;
   console.log(taskContent);
-  
+
   localStorage.setItem("tasks", JSON.stringify(tasks));
   displayTasks();
 }
+
+$("#9").click(function (event) {
+  storeTask(0);
+});
+$("#10").click(function (event) {
+  storeTask(1);
+});
+$("#11").click(function (event) {
+  storeTask(2);
+});
+$("#12").click(function (event) {
+  storeTask(3);
+});
+$("#13").click(function (event) {
+  storeTask(4);
+});
+$("#14").click(function (event) {
+  storeTask(5);
+});
+$("#15").click(function (event) {
+  storeTask(6);
+});
+$("#16").click(function (event) {
+  storeTask(7);
+});
+$("#17").click(function (event) {
+  storeTask(8);
+});
