@@ -31,10 +31,13 @@ var tasks = [{
   text: "",
 }]; 
 
+
+// initial functions
 storageInit();
 init();
 
 
+// section color functionality by looping and comparing with current time
 function init() {
     var timeNow;
     var id;
@@ -58,8 +61,7 @@ function init() {
 }
 
 
-  
-
+  //display text on tasks 
 function displayTasks() {
     for (var i = 0; i < tasks.length; i++) {
         var task = tasks[i];
@@ -68,6 +70,7 @@ function displayTasks() {
     }
 }
 
+// localStorage functionality when website init
 function storageInit() {
     var savedTasks = JSON.parse(localStorage.getItem("tasks"));
     
@@ -78,17 +81,17 @@ function storageInit() {
     }
 }
 
-
+// store text on time frame section
 function storeTask(i){
   var taskContent=$(tasks[i].id).children(".description").val();
 
   tasks[i].text=taskContent;
-  console.log(taskContent);
-
+  
   localStorage.setItem("tasks", JSON.stringify(tasks));
   displayTasks();
 }
 
+// save button event listener for every time frame section
 $("#9btn").click(function (event) {
   storeTask(0);
 });
