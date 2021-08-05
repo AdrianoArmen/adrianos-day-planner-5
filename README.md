@@ -12,7 +12,7 @@ Homework 5 - Day Planner
  ## Mock-Up
 
 
-The following animation demonstrates the application functionality:
+The following animation demonstrates the application desired functionality:
 
 ![A user clicks on slots on the color-coded calendar and edits the events.](./assets/img/05-third-party-apis-homework-demo.gif)
 
