@@ -1,4 +1,5 @@
 # adrianos-day-planner-5
+![GitHub license](https://img.shields.io/badge/license-MIT-green.svg)
 
 Homework 5 - Day Planner
 
@@ -28,4 +29,11 @@ The following animation demonstrates the actual application functionality:
 
 ![A user saves a task on the work day color-based scheduler and clicks on the save button then refreshes the browser demonstrating localstorage .](./assets/img/appfunctionality.gif)
 
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+---
+
+© 2021 Adriano.
 
